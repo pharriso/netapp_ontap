@@ -9,6 +9,7 @@
       state: present
       name: "{{ volume_name }}"
       aggregate_name: aggr1
+      junction_path: "/{{ volume_name }}"
       size: "{{ volume_size }}"
       vserver: "{{ ontap_vserver }}"
       hostname: "{{ ontap_hostname }}"
