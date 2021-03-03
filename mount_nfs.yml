@@ -1,0 +1,12 @@
+---
+
+- hosts: "{{ mount_host }}"
+  gather_facts: true
+  become: true
+  tasks:
+  - name: mount nfs share
+    mount:
+      state: mounted
+      path: /mnt/{{ volume_name }}
+      fstype: nfs
+      src: "{{ ontap_nfs_ip }}:/{{ volume_name }}"
