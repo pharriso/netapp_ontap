@@ -28,7 +28,7 @@
       table: sc_req_item
       number: "RITM{{ snow_request.split('REQ')[1] }}"
       data:
-        work_notes: "Change implemented by Ansible Automation Platform"
+        work_notes: "Change implemented by Ansible Automation Platform. Provisioned volume {{ volume_name }} of size {{ volume_size }} to instance {{ mount_host }}."
         state: 3
     delegate_to: localhost
     become: false
