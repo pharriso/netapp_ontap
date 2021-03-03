@@ -14,4 +14,4 @@
       hostname: "{{ ontap_hostname }}"
       username: "{{ ontap_username }}"
       password: "{{ ontap_password }}"
-   delegate_to: localhost
+    delegate_to: localhost
