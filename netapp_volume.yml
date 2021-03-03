@@ -2,7 +2,7 @@
   gather_facts: false
   connection: local
   vars:
-   ontap_vserver: svm_ansible
+   ontap_vserver: svm_test
   tasks:
   - name: create netapp volume
     netapp.ontap.na_ontap_volume:
