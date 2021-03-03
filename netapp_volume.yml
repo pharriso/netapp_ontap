@@ -4,7 +4,7 @@
   vars:
    ontap_vserver: svm_ansible
   tasks:
-  - name: Create FlexVol
+  - name: create netapp volume
     netapp.ontap.na_ontap_volume:
       state: present
       name: "{{ volume_name }}"
